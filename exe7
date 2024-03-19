@@ -1,0 +1,24 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class exercicios7 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        int resultado;
+
+        if (numero % 2 == 0) { // verifica se é par
+            resultado = numero + 5;
+        } else { // caso contrário, é ímpar
+            resultado = numero + 8;
+        }
+
+        System.out.println("O resultado da soma é: " + resultado);
+
+        scanner.close();
+    }
+}
